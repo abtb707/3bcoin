@@ -3,67 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>3BCOIN | Official Website</title>
+  <title>3BCOIN Official Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; background-color: #f8f8f8; margin: 0; padding: 0; }
-    header { background-color: #222; color: white; padding: 20px; }
-    .lang-switch { position: absolute; top: 20px; right: 20px; }
-    .section { padding: 40px; }
-    .arabic { direction: rtl; display: none; }
-    .logo { width: 100px; }
-    button { padding: 10px 20px; margin: 10px; cursor: pointer; }
-    footer { background-color: #eee; padding: 20px; margin-top: 40px; font-size: 14px; }
-    footer a { margin: 0 10px; color: #333; text-decoration: none; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      background-color: #000;
+    }
+
+    header .banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      opacity: 0.7;
+    }
+
+    header .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 160px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5em;
+      color: #00ffc3;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a button {
+      background: #00ffc3;
+      border: none;
+      color: #000;
+      padding: 14px 24px;
+      margin: 10px;
+      border-radius: 30px;
+      font-size: 1em;
+      font-weight: bold;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .buttons a button:hover {
+      background: #00b893;
+      transform: scale(1.05);
+    }
+
+    hr {
+      margin: 50px auto;
+      border: 0;
+      height: 2px;
+      background: #00ffc3;
+      width: 80%;
+    }
+
+    .promo-image {
+      width: 100%;
+      max-width: 960px;
+      border-radius: 12px;
+      margin: 40px auto;
+      display: block;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <button onclick="toggleLang()">العربية / English</button>
-  </div>
+
   <header>
+    <img src="banner-dubai.jpg" alt="Dubai Background" class="banner" />
     <img src="logo.png" alt="3BCOIN Logo" class="logo" />
-    <h1 id="title">Welcome to 3BCOIN</h1>
-    <p id="subtitle">Real Estate-Backed Cryptocurrency from Dubai</p>
   </header>
 
-  <div class="section english">
-    <h2>Token Info</h2>
-    <p><strong>Token Name:</strong> 3BCOIN</p>
-    <p><strong>Symbol:</strong> 3BC</p>
-    <p><strong>Total Supply:</strong> 80,000,000,000</p>
-    <p><strong>Contract:</strong> 0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f</p>
-    <a href="https://pancakeswap.finance/swap?outputCurrency=0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank"><button>Buy on PancakeSwap</button></a>
-    <a href="https://poocoin.app/tokens/0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank"><button>View Chart</button></a>
+  <div class="container">
+    <h1>Welcome to 3BCOIN</h1>
+    <p>The real estate-backed cryptocurrency connected to Dubai and global tourist cities.</p>
+
+    <div class="buttons">
+      <a href="https://poocoin.app/tokens/0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank">
+        <button>📈 View Chart</button>
+      </a>
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank">
+        <button>🛒 Buy on PancakeSwap</button>
+      </a>
+      <a href="3BCOIN_Whitepaper.pdf" target="_blank">
+        <button>📄 View Whitepaper</button>
+      </a>
+      <a href="https://t.me/coin3b" target="_blank">
+        <button>💬 Join Telegram</button>
+      </a>
+    </div>
+
+    <img src="cover-future.jpg" alt="3BCOIN Future" class="promo-image" />
+
+    <iframe width="90%" height="400" src="https://www.youtube.com/embed/q9R4rO3OH8I" allowfullscreen></iframe>
+
+    <hr/>
+
+    <h1>مرحبًا بكم في عملة 3BCOIN</h1>
+    <p>عملة رقمية مدعومة بالعقارات في دبي وجميع المدن السياحية الكبرى.</p>
+
+    <div class="buttons">
+      <a href="https://poocoin.app/tokens/0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank">
+        <button>📊 عرض الشارت</button>
+      </a>
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank">
+        <button>🛒 شراء من بانكيك سواب</button>
+      </a>
+      <a href="3BCOIN_Whitepaper.pdf" target="_blank">
+        <button>📄 عرض المستند التعريفي</button>
+      </a>
+      <a href="https://t.me/coin3b" target="_blank">
+        <button>💬 دخول التلجرام</button>
+      </a>
+    </div>
+
+    <hr>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4351250283146!2d55.27078297531081!3d25.20484917770933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4341c6e6abef%3A0x4fa5f7b59b1edbeb!2sDowntown%20Dubai!5e0!3m2!1sen!2sae!4v1687275181215"
+      width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
   </div>
 
-  <div class="section arabic">
-    <h2>معلومات العملة</h2>
-    <p><strong>اسم العملة:</strong> 3BCOIN</p>
-    <p><strong>الرمز:</strong> 3BC</p>
-    <p><strong>الإجمالي:</strong> ٨٠ مليار</p>
-    <p><strong>العقد:</strong> 0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f</p>
-    <a href="https://pancakeswap.finance/swap?outputCurrency=0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank"><button>شراء من PancakeSwap</button></a>
-    <a href="https://poocoin.app/tokens/0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f" target="_blank"><button>عرض الشارت</button></a>
-  </div>
-
-  <footer>
-    <p>
-      <a href="https://twitter.com/3bcoin3b" target="_blank">Twitter</a> |
-      <a href="https://t.me/coin3b" target="_blank">Telegram</a> |
-      <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
-    </p>
-    <p>&copy; 2025 3BCOIN. All rights reserved.</p>
-  </footer>
-
-  <script>
-    let isArabic = false;
-    function toggleLang() {
-      isArabic = !isArabic;
-      document.querySelector('.english').style.display = isArabic ? 'none' : 'block';
-      document.querySelector('.arabic').style.display = isArabic ? 'block' : 'none';
-      document.getElementById('title').innerText = isArabic ? 'مرحبًا بك في 3BCOIN' : 'Welcome to 3BCOIN';
-      document.getElementById('subtitle').innerText = isArabic ? 'عملة رقمية مدعومة بالعقارات في دبي' : 'Real Estate-Backed Cryptocurrency from Dubai';
-    }
-  </script>
 </body>
 </html>
