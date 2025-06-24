@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3BCOIN | Official Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background-color: #f8f8f8; margin: 0; padding: 0; }
+    header { background-color: #222; color: white; padding: 20px; }
+    .lang-switch { position: absolute; top: 20px; right: 20px; }
+    .section { padding: 40px; }
+    .arabic { direction: rtl; display: none; }
+    .logo { width: 100px; }
+    button { padding: 10px 20px; margin: 10px; cursor: pointer; }
+    footer { background-color: #eee; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="toggleLang()">العربية / English</button>
+  </div>
+  <header>
+    <img src="logo.png" alt="3BCOIN Logo" class="logo" />
+    <h1 id="title">Welcome to 3BCOIN</h1>
+    <p id="subtitle">Real Estate-Backed Cryptocurrency from Dubai</p>
+  </header>
+
+  <div class="section english">
+    <h2>Token Info</h2>
+    <p><strong>Token Name:</strong> 3BCOIN</p>
+    <p><strong>Symbol:</strong> 3BC</p>
+    <p><strong>Total Supply:</strong> 80,000,000,000</p>
+    <p><strong>Contract:</strong> 0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f</p>
+    <a href="https://pancakeswap.finance" target="_blank"><button>Buy on PancakeSwap</button></a>
+  </div>
+
+  <div class="section arabic">
+    <h2>معلومات العملة</h2>
+    <p><strong>اسم العملة:</strong> 3BCOIN</p>
+    <p><strong>الرمز:</strong> 3BC</p>
+    <p><strong>الإجمالي:</strong> ٨٠ مليار</p>
+    <p><strong>العقد:</strong> 0x0d7e68d57c3bad15b17dba972dbc3b73a4cf823f</p>
+    <a href="https://pancakeswap.finance" target="_blank"><button>شراء من PancakeSwap</button></a>
+  </div>
+
+  <footer>
+    <p>© 2025 3BCOIN. All rights reserved.</p>
+    <p><a href="https://twitter.com/3bcoin3b" target="_blank">Twitter</a></p>
+  </footer>
+
+  <script>
+    let isArabic = false;
+    function toggleLang() {
+      isArabic = !isArabic;
+      document.querySelector('.english').style.display = isArabic ? 'none' : 'block';
+      document.querySelector('.arabic').style.display = isArabic ? 'block' : 'none';
+      document.getElementById('title').innerText = isArabic ? 'مرحبًا بك في 3BCOIN' : 'Welcome to 3BCOIN';
+      document.getElementById('subtitle').innerText = isArabic ? 'عملة رقمية مدعومة بالعقارات في دبي' : 'Real Estate-Backed Cryptocurrency from Dubai';
+    }
+  </script>
+</body>
+</html>
